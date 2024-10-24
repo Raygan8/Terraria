@@ -1,0 +1,211 @@
+body, ul, li, h1, h2, h3, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+header {
+    background-color: rgba(0, 50, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+header img {
+    max-width: 100%;
+    height: 50px;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color:#f39c12;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: white;
+    background-color: rgba(0, 50, 0, 0.8);
+    max-width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+h3 {
+    background-color: rgba(0, 50, 0, 0.8);
+    max-width:100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 300px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12; 
+}
+
+main {
+    padding: 20px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: white;
+}
+.content {
+    max-width: 1200px; 
+    text-align: center; 
+}
+
+.content h2 {
+    color: #f39c12; 
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    font-size: 2.5em;
+
+}
+
+.content p {
+    background-color:  rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+
+    
+}
+
+.crafting-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.crafting-item:hover {
+    transform: scale(1.05);
+}
+
+.crafting-item {
+    background: #34495e; 
+    border: 5px solid #f39c12; 
+    border-radius: 30px;
+    margin: 20px;
+    padding: 15px;
+    width: 240px; 
+    height: 215px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.crafting-image {
+    width: 250px;
+    height: 145px;
+    max-height: 100px; 
+    border-radius: 10px;
+    object-fit: contain; 
+}
+
+.crating-item p {
+    font-size: 0.9em; 
+    color: #ecf0f1;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #27ae60;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #ecf0f1;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2em;
+    }
+
+}
+
+    nav ul li {
+        margin: 0 10px;
+
+    .boss-item {
+        width: 90%;
+        height: auto;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .boss-item {
+        height: auto;
+    }
+
+    .boss-image {
+        max-height: 120px;
+    }
+
+}

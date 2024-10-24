@@ -1,0 +1,136 @@
+body, ul, li, h1, h2, h3, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 50, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: #f39c12;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #f39c12;
+    text-align: center;
+}
+
+.content p {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weapon-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.weapon-item {
+    background-color: #34495e;
+    border: 2px solid #f39c12;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    margin: 10px;
+    width: calc(45% - 20px);
+}
+
+.weapon-item:hover {
+    transform: scale(1.05);
+}
+
+.weapon-image {
+    width: 100%;
+    height: auto;
+    max-height: 130px;
+    border-radius: 5px;
+}
+
+.weapon-item p {
+    color: #ecf0f1;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #27ae60;
+    color: #ecf0f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2em;
+    }
+
+    .weapon-section {
+        flex-direction: column;
+    }
+
+    .weapon-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .weapon-section {
+        flex-direction: column;
+    }
+
+    .weapon-item {
+        max-width: 90%;
+    }
+}
